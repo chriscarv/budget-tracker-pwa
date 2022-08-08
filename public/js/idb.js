@@ -7,7 +7,7 @@ request.onupgradeneeded = function(event) {
 };
 
 request.onsuccess = function(event) {
-    db.event.target.result;
+   db = event.target.result;
     if (navigator.onLine){
         uploadTransaction();
     }
